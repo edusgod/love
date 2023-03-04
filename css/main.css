@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    font-family: 'Comic Neue', cursive;
+    text-decoration: none;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+:root {
+    --loading-width: 160px;
+    --loading-heigth: 23px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    text-align: center;
+    width: 90vw;
+}
+
+.box {
+    border-radius: 13px;
+    display: inline-block;
+    border: solid black 3px;
+    width: var(--loading-width);
+    background-color: white;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+}
+
+.cargando {
+    border-radius: 10px;
+    height: var(--loading-heigth);
+    width: var(--loading-width);
+    background-color: #0051ff;
+    animation: loading 5s delay iteration-count direction fill-mode;
+    -webkit-animation: loading 5s;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: var(--loading-width);
+    }
+}
+
+#cora {
+    height: 5rem;
+    position: relative;
+    animation: palpitar 1s linear infinite alternate;
+    z-index: 1;
+    background-color: rgba(0, 255, 255, 0);
+}
+
+@keyframes palpitar {
+    0% {
+        transform: rotate(0deg) scale(1.2);
+    }
+
+    80% {
+        transform: rotate(0deg) scale(1.1);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1.1);
+    }
+}
+
+.box {
+    margin-top: 3px;
+    position: relative;
+    z-index: 4;
+}
