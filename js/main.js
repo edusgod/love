@@ -4,7 +4,7 @@
 setTimeout(function () {
     const message = document.getElementById('mensaje');
     message.innerHTML = "Hola Amor!"
-}, 1000);
+}, 0);
 
 setTimeout(function () {
     const message = document.getElementById('mensaje');
@@ -33,15 +33,15 @@ setTimeout(function () {
 
 setTimeout(function () {
     const message = document.getElementById('mensaje');
-    message.innerHTML = "TE AMO <3"
+    message.innerHTML = "TE AMO <a>❤️</a>"
 }, 10600);
 
 // AUTOR
 
 setTimeout(function () {
-    const message = document.getElementById('autor');
+    const message = document.getElementById('creditos');
     message.innerHTML = "Para Sindy de Edu"
-}, 7600);
+}, 0);
 
 // AUDIO MENSAJE
 

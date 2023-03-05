@@ -2,16 +2,15 @@
     font-family: 'comic';
     src:url(/Comic.woff);
 }
-
 * {
     margin: 0;
     padding: 0;
-    background-color: whitesmoke;
     font-family: 'comic Neue', cursive;
     text-decoration: none;
-    padding: 0;
     border: none;
     background: none;
+    background-color: #ffffff;
+    background-color: #ffe600;
 }
 
 :root {
@@ -69,7 +68,7 @@ main {
 }
 
 #cora {
-    height: 5rem;
+    height: 8rem;
     position: relative;
     animation: palpitar 1s linear infinite alternate;
     z-index: 1;
