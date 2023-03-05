@@ -1,44 +1,106 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SORPRESA!</title>
-
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/player.css">
-
+    <title>Abrazo virtual</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: whitesmoke;
+            font-family: 'Comic Neue', cursive;
+        }
+        
+         :root {
+            --loading-width: 160px;
+            --loading-heigth: 23px;
+        }
+        
+        body {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        main {
+            text-align: center;
+            width: 90vw;
+        }
+        
+        .box {
+            display: inline-block;
+            border: solid black 4px;
+            border-radius: 10px;
+            width: var(--loading-width);
+            background-color: white;
+        }
+        
+        .loading-box {
+            height: var(--loading-heigth);
+            width: var(--loading-width);
+            background-color: #ff2a43;
+            border-radius: 4px;
+            animation: loading 5s;
+        }
+        
+        #state-message {
+            font-size: larger;
+            font-weight: bold;
+            color: rgb(109, 109, 109);
+        }
+        
+        @keyframes loading {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: var(--loading-width);
+            }
+        }
+        
+        #title,
+        #result {
+            margin-top: 8px;
+            margin-bottom: 10px;
+        }
+        
+        #me {
+            margin-top: 8px;
+            margin-bottom: 14px;
+        }
+        
+        .box {
+            margin-top: 3px;
+        }
+    </style>
 </head>
 
 <body>
     <main>
+        <h1 id="msgintro">Bienvenida amor!</h1>
+        <div class="box">
+            <div class="loading-box"></div>
+        </div>
+        <h3 id="estado-message">cargando...</h3>
+        <script>
+            setTimeout(function() {
+                const message = document.getElementById('resultado');
+                message.innerHTML = "Ingresando"
+            }, 6200);
+            setTimeout(function() {
+                const message = document.getElementById('estado-message');
+                message.innerHTML = "&nbsp;"
+            }, 6000);
 
-        <section id="player">
-            <div id="cover">
-                <img src="svg/cover.jpg" alt="">
-            </div>
-            <div id="funciones">
-                <button id="audioBTN" onclick="audioFunciones()">
-                    <img id="cora" src="svg/cora.png" />
-                </button>
-            </div>
-            <div id="datos">
-                <h1 id="mensaje"></h1>
-            </div>
-        </section>
-
-        <audio id="audioedu">
-            <source src="https://www.mensajesbullon.com/audio.mp3" type="audio/mpeg">
-        </audio>
-
-        <h4 id="creditos"></h4>
-        <h4 id="creditos2"><a>❤️</a></h4>
-
+            setTimeout( function() { window.location.href = "play2.html"; }, 7000 );
+        </script>
     </main>
-
-    <script src="js/main.js"></script>
 </body>
 
 </html>

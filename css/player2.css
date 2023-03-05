@@ -1,0 +1,74 @@
+#player {
+    margin: auto;
+    border: 5px solid #ff2a43;
+    border-radius: 0px 0px 20px 20px;
+    width: 25%;
+    -webkit-border-radius: 0px 0px 20px 20px;
+    -moz-border-radius: 0px 0px 20px 20px;
+    -ms-border-radius: 0px 0px 20px 20px;
+    -o-border-radius: 0px 0px 20px 20px;
+}
+
+#cover {
+    border-bottom: #ff2a43 solid 5px;
+}
+
+#cover>img {
+    width: 100%;
+    height:auto;
+    display: block;
+}
+
+#funciones {
+    border-bottom: #ff2a43 solid 5px;
+}
+
+#cora {
+    margin: 0px;
+
+}
+
+#funciones>button>img {
+    margin: 25px 0px 25px 0px;
+}
+
+#datos {
+    margin: 10px 0px 10px 0px;
+}
+
+#creditos {
+    margin: 10px 0px 10px 0px;
+}
+
+@media only screen and (max-width: 915px) {
+
+    #player {
+        margin: auto;
+        border: 5px solid #ff2a43;
+        border-radius: 0px 0px 20px 20px;
+        width: 95%;
+        -webkit-border-radius: 0px 0px 20px 20px;
+        -moz-border-radius: 0px 0px 20px 20px;
+        -ms-border-radius: 0px 0px 20px 20px;
+        -o-border-radius: 0px 0px 20px 20px;
+}
+
+    #cora {
+        margin: 0px;
+
+    }
+
+    #funciones>button>img {
+        margin: 25px 0px 25px 0px;
+    }
+
+    #datos {
+        margin: 10px 0px 10px 0px;
+    }
+
+    #creditos {
+        margin: 10px 0px 10px 0px;
+    }
+
+  }
+
