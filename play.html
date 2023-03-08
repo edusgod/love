@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ERES LA MEJOR!</title>
+    <title>CON MUCHO AMOR</title>
+
+    <link rel="icon" href="svg/carta.png" type="image/x-icon">
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/player.css">
@@ -15,26 +17,34 @@
 <body>
     <main>
 
-        <section id="player">
-            <div id="cover">
-                <img src="svg/cover.jpg" alt="">
-            </div>
-            <div id="funciones">
-                <button id="audioBTN" onclick="audioFunciones()">
-                    <img id="cora" src="svg/cora.png" />
-                </button>
-            </div>
-            <div id="datos">
-                <h1 id="mensaje"></h1>
-            </div>
-        </section>
+        <div id="cover">
+            <img src="svg/cover.jpg" alt="">
+        </div>
+        <table id="player">
+            <tr>
+                <td>
+                    <div id="funciones">
+                        <button id="audioBTN" onclick="audioFunciones()">
+                            <img id="cora" src="svg/cora.png" />
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="msg">
+                    <div id="datos">
+                        <h1 id="mensaje"></h1>
+                    </div>
+                </td>
+            </tr>
+        </table>
 
-        <audio id="audioedu">
-            <source src="https://www.mensajesbullon.com/02.mp3" type="audio/mpeg">
+        <audio id="audioedu" volume="2">
+            <source src="https://www.mensajesbullon.com/03.mp3" type="audio/mpeg">
         </audio>
 
         <h4 id="creditos"></h4>
-        <h4 id="creditos2"><a>❤️</a></h4>
+        <h4 id="creditos2"></h4>
 
     </main>
 

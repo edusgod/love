@@ -8,22 +8,22 @@ setTimeout(function () {
 
 setTimeout(function () {
     const message = document.getElementById('mensaje');
-    message.innerHTML = "Espero que"
+    message.innerHTML = "Este mensaje"
 }, 2500);
 
 setTimeout(function () {
     const message = document.getElementById('mensaje');
-    message.innerHTML = "estés bien."
+    message.innerHTML = "es para ti"
 }, 4000);
 
 setTimeout(function () {
     const message = document.getElementById('mensaje');
-    message.innerHTML = "Esta pequeña sorpresa"
+    message.innerHTML = "desde lo más"
 }, 6000);
 
 setTimeout(function () {
     const message = document.getElementById('mensaje');
-    message.innerHTML = "es para ti"
+    message.innerHTML = "profundo de mi corazón."
 }, 7600);
 
 setTimeout(function () {
@@ -40,7 +40,7 @@ setTimeout(function () {
 
 setTimeout(function () {
     const message = document.getElementById('creditos');
-    message.innerHTML = "Para Sindy de Edu"
+    message.innerHTML = "de Edu"
 }, 0);
 
 // AUDIO MENSAJE
